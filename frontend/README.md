@@ -41,30 +41,69 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ------- -->
+ecommerce-platform/
+├── backend/
+│   ├── config/
+│   │   ├── db.js
+│   │   └── dotenv.config.js
+│   ├── controllers/
+│   │   ├── productController.js
+│   │   ├── userController.js
+│   │   └── orderController.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   ├── models/
+│   │   ├── productModel.js
+│   │   ├── userModel.js
+│   │   └── orderModel.js
+│   ├── routes/
+│   │   ├── productRoutes.js
+│   │   ├── userRoutes.js
+│   │   └── orderRoutes.js
+│   ├── utils/
+│   │   └── generateToken.js
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── actions/
+│   │   │   ├── productActions.js
+│   │   │   ├── userActions.js
+│   │   │   └── cartActions.js
+│   │   ├── components/
+│   │   │   ├── Header.js
+│   │   │   ├── Footer.js
+│   │   │   ├── ProductCard.js
+│   │   │   ├── CartItem.js
+│   │   │   └── LoadingSpinner.js
+│   │   ├── constants/
+│   │   │   ├── productConstants.js
+│   │   │   ├── userConstants.js
+│   │   │   └── cartConstants.js
+│   │   ├── reducers/
+│   │   │   ├── productReducers.js
+│   │   │   ├── userReducers.js
+│   │   │   ├── cartReducers.js
+│   │   │   └── rootReducer.js
+│   │   ├── screens/
+│   │   │   ├── HomeScreen.js
+│   │   │   ├── ProductScreen.js
+│   │   │   ├── CartScreen.js
+│   │   │   └── LoginScreen.js
+│   │   ├── store/
+│   │   │   └── store.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── styles/
+│   │       ├── App.css
+│   │       ├── Header.css
+│   │       └── Footer.css
+│   └── package.json
+├── .gitignore
+├── README.md
+└── package.json
